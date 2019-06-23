@@ -4,13 +4,13 @@ import { selectSong } from '../actions';
 
 
 const SongListComponent= (props)=> {
-    // console.log(songs)
+    // console.log(props.songs)
     // const [resource, setResource] = useState ('posts');
     return (  
-      <div className="ui divided list">
+      <div className="ui divided list" data-test="songListComponent">
         {/* Song List */}
             {props.songs.map(song =>(
-                <div className="item" key={song.title}>
+                <div className="item" key={song.title} data-test="songListComponentItem">
                     <div className="right floated content">
                         <button 
                             className="ui button primary"
@@ -19,14 +19,14 @@ const SongListComponent= (props)=> {
                             Select
                         </button>
                     </div>
-                    <div className="content">{song.title}</div>
+                    <div className="content" >{song.title}</div>
                 </div>
             ))}
       </div>
     );
   }
   const mapStateToProp=(state)=>{
-    //   console.log(state)
+      console.log(state)
       return {
           //songs available in SongListComponent as an object of props
           songs: state.songs
