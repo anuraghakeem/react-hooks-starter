@@ -8,12 +8,14 @@ const App = ()=>{
 
     return (
       <div>
-          <UserList />
-          <div>
-              <button onClick = {()=> setResource('posts')}>Posts</button>
-              <button onClick = {()=> setResource('todos')}>Todos</button> 
+          <div data-test="UserListComponent">
+            <UserList />
           </div>
           <div>
+              <button data-test="buttonComponent" onClick = {()=> setResource('posts')}>Posts</button>
+              <button data-test="buttonComponent" onClick = {()=> setResource('todos')}>Todos</button> 
+          </div>
+          <div data-test="ResourceListComponent">
             <ResourceList resource = {resource} />
           </div>
       </div>  

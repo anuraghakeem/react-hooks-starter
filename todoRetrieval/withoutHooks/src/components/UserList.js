@@ -11,7 +11,7 @@ class UserList extends React.Component{
     render(){
         return(
             <div data-test="UserListComp">
-                <ul>{this.state.users.map((user)=><li key>{user.name}</li>)}</ul>
+                <ul data-test="UserListItem">{this.state.users.map((user)=><li key>{user.name}</li>)}</ul>
             </div>
         );
     }

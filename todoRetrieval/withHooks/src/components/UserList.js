@@ -7,11 +7,13 @@ export default () => {
     const users = useResource('users');    
 
     return (
-        <ul>
-            {users.map(user =>(
-                <li id={user.id}>{user.name}</li>
-            ))}
-        </ul>
+        <div data-test="UserListComp">
+            <ul>
+                {users.map(user =>(
+                    <li id={user.id}>{user.name}</li>
+                ))}
+            </ul>
+        </div>
     )
 
 }

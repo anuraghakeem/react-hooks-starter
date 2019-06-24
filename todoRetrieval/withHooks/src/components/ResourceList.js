@@ -5,11 +5,14 @@ const ResourceList = ( {resource} ) => {
     const resources = useResource(resource);    
 
     return (
-        <ul>
-            {resources.map(record =>(
-                <li id={record.id}>{record.title}</li>
-            ))}
-        </ul>
+        <div data-test="ResourceListComp">
+            <ul>
+                {resources.map(record =>(
+                    <li id={record.id}>{record.title}</li>
+                ))}
+            </ul>
+        </div>
+        
     )
 
 }
