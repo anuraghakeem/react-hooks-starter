@@ -9,14 +9,14 @@ class App extends React.Component{
     render(){
         return (
             <Fragment>
-                <div>
+                <div data-test="UserListComponent">
                     <UserList />
                 </div>
                 <div>
-                    <button onClick={()=>this.setState({resource:"posts"})}>posts</button>
-                    <button onClick={()=>this.setState({resource:"todos"})}>todos</button>
+                    <button data-test="buttonComponent" onClick={()=>this.setState({resource:"posts"})}>posts</button>
+                    <button data-test="buttonComponent" onClick={()=>this.setState({resource:"todos"})}>todos</button>
                 </div>
-                <div><ResourceList resource={this.state.resource} /></div>
+                <div data-test="ResourceListComponent"><ResourceList resource={this.state.resource} /></div>
             </Fragment>
         );
     }

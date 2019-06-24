@@ -10,9 +10,9 @@ class UserList extends React.Component{
     
     render(){
         return(
-            <Fragment>
+            <div data-test="UserListComp">
                 <ul>{this.state.users.map((user)=><li key>{user.name}</li>)}</ul>
-            </Fragment>
+            </div>
         );
     }
 }

@@ -16,7 +16,9 @@ class ResourceList extends React.Component{
     }
     render(){
         return (
-            <ul>{this.state.resources.map((record)=><li key>{record.title}</li>)}</ul>
+            <div data-test="ResourceListComp">
+                <ul>{this.state.resources.map((record)=><li key>{record.title}</li>)}</ul>
+            </div>            
         );
     }
 }
