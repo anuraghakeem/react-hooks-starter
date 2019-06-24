@@ -11,7 +11,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",    
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -31,23 +31,9 @@
   },
   "devDependencies": {
     "babel-jest": "^24.8.0",
-    "jest": "^24.7.1"
-  },
-  "jest": {
-    "collectCoverage": true,
-    "collectCoverageOnlyFrom": {
-      "src/Components/Root/Root.js": true
-    },
-    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
-    "testFileExtensions": [
-      "es6",
-      "js"
-    ],
-    "moduleFileExtensions": [
-      "js"
-    ],
-    "unmockedModulePathPatterns": [
-      "react"
-    ]
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.7.1",
+    "jest-enzyme": "^7.0.2"
   }
 }

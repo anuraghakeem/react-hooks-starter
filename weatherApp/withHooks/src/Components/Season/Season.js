@@ -1,6 +1,6 @@
 /* eslint-disable react/require-render-return */
 /* eslint-disable no-useless-constructor */
-import  React from 'react'
+import React from 'react'
 import './Season.css'
 // import 'semantic-ui-react';
 
@@ -19,12 +19,14 @@ function Season(props) {
 
 
     return (
-        <div className={`season ${season}`}>
-            <i className={`icon-left massive ${iconName} icon`} />
-            <h1>
-                {text}
-            </h1>
-            <i className={`icon-right massive ${iconName} icon`} />
+        <div className="getSeason">
+            <div className={`season ${season}`}>
+                <i className={`icon-left massive ${iconName} icon`} />
+                <h1>
+                    {text}
+                </h1>
+                <i className={`icon-right massive ${iconName} icon`} />
+            </div>
         </div>
     )
 
