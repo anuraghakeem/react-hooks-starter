@@ -1,20 +1,28 @@
 /* eslint-disable no-useless-constructor */
-import React from 'react'
+import React from 'react';
+import propTypes from 'prop-types';
 
 class Error extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props)
     }
     render() {
         return (
-            <div class="ui warning message">
-                <i class="close icon"></i>
-                <div class="header">
-                    {this.props.message}
+            <div className="getError">
+                <div className="ui warning message">
+                    <i className="close icon"></i>
+                    <div className="header">
+                        {this.props.message}
+                    </div>
                 </div>
-                </div>
+            </div>
         )
     }
 }
+
+Error.propTypes = {
+    message: propTypes.string
+}
+
 
 export default Error;

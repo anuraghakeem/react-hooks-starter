@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1561110920771" clover="3.2.0">
-  <project timestamp="1561110920771" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1561369730071" clover="3.2.0">
+  <project timestamp="1561369730071" name="All files">
+    <metrics statements="13" coveredstatements="12" conditionals="12" coveredconditionals="6" methods="5" coveredmethods="5" elements="30" coveredelements="23" complexity="0" loc="13" ncloc="13" packages="2" files="2" classes="2"/>
+    <package name="Error">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Error.js" path="C:\Users\amiranja4\Desktop\react-hooks-starter\weatherApp\withoutHooks\src\Components\Error\Error.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Season">
+      <metrics statements="10" coveredstatements="9" conditionals="12" coveredconditionals="6" methods="3" coveredmethods="3"/>
+      <file name="Season.js" path="C:\Users\amiranja4\Desktop\react-hooks-starter\weatherApp\withoutHooks\src\Components\Season\Season.js">
+        <metrics statements="10" coveredstatements="9" conditionals="12" coveredconditionals="6" methods="3" coveredmethods="3"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="27" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
