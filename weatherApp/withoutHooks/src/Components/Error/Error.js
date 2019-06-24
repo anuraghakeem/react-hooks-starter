@@ -2,17 +2,19 @@
 import React from 'react'
 
 class Error extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props)
     }
     render() {
         return (
-            <div class="ui warning message">
-                <i class="close icon"></i>
-                <div class="header">
-                    {this.props.message}
+            <div className="errorComponent">
+                <div className="ui warning message">
+                    <i className="close icon"></i>
+                    <div className="header">
+                        {this.props.message}
+                    </div>
                 </div>
-                </div>
+            </div>
         )
     }
 }
