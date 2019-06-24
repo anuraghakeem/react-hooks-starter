@@ -1,8 +1,9 @@
 /* eslint-disable react/require-render-return */
 /* eslint-disable no-useless-constructor */
-import React from 'react'
+import React from 'react';
+import propTypes from 'prop-types';
 import './Season.css'
-// import 'semantic-ui-react';
+
 
 class Season extends React.Component {
     constructor(props) {
@@ -37,6 +38,10 @@ class Season extends React.Component {
         )
 
     }
+}
+
+Season.propTypes = {
+    lat:propTypes.string
 }
 
 export default Season;

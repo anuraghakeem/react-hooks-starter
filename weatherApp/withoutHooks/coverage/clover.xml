@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1561356763561" clover="3.2.0">
-  <project timestamp="1561356763561" name="All files">
-    <metrics statements="12" coveredstatements="11" conditionals="12" coveredconditionals="6" methods="6" coveredmethods="6" elements="30" coveredelements="23" complexity="0" loc="12" ncloc="12" packages="3" files="3" classes="3"/>
+<coverage generated="1561369730071" clover="3.2.0">
+  <project timestamp="1561369730071" name="All files">
+    <metrics statements="13" coveredstatements="12" conditionals="12" coveredconditionals="6" methods="5" coveredmethods="5" elements="30" coveredelements="23" complexity="0" loc="13" ncloc="13" packages="2" files="2" classes="2"/>
     <package name="Error">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="Error.js" path="C:\Users\amiranja4\Desktop\react-hooks-starter\weatherApp\withoutHooks\src\Components\Error\Error.js">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
       </file>
     </package>
     <package name="Season">
-      <metrics statements="9" coveredstatements="8" conditionals="12" coveredconditionals="6" methods="3" coveredmethods="3"/>
+      <metrics statements="10" coveredstatements="9" conditionals="12" coveredconditionals="6" methods="3" coveredmethods="3"/>
       <file name="Season.js" path="C:\Users\amiranja4\Desktop\react-hooks-starter\weatherApp\withoutHooks\src\Components\Season\Season.js">
-        <metrics statements="9" coveredstatements="8" conditionals="12" coveredconditionals="6" methods="3" coveredmethods="3"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="cond" truecount="3" falsecount="1"/>
-        <line num="16" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="cond" truecount="1" falsecount="1"/>
+        <metrics statements="10" coveredstatements="9" conditionals="12" coveredconditionals="6" methods="3" coveredmethods="3"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="25" count="1" type="stmt"/>
         <line num="26" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="27" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="Spinner">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="Spinner.js" path="C:\Users\amiranja4\Desktop\react-hooks-starter\weatherApp\withoutHooks\src\Components\Spinner\Spinner.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="27" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
       </file>
     </package>
   </project>
