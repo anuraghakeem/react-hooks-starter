@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import useResource from './useResources'
 
 const ResourceList = ( {resource} ) => {
@@ -16,5 +18,7 @@ const ResourceList = ( {resource} ) => {
     )
 
 }
-
+ResourceList.propTypes = {
+    resource : PropTypes.string
+}
 export default ResourceList;
