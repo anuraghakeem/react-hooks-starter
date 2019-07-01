@@ -1,26 +1,43 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { selectSong } from '../actions';
+import styled from '@emotion/styled';
 
+
+const Button = styled.button`
+color: white;
+background-color: black;
+border-width: 0;
+margin-top : 5px;
+margin-right : 10px;
+margin-bottom : 5px;
+`
+
+const Content = styled.div`
+padding : 10px;
+`
 
 const SongListComponent= (props)=> {
     // console.log(props.songs)
     // const [resource, setResource] = useState ('posts');
     return (  
-      <div className="ui divided list" data-test="songListComponent">
+      <div 
+        className="ui divided list" 
+        data-test="songListComponent"
+        >
         {/* Song List */}
             {props.songs.map(song =>(
-                <div className="item" key={song.title} data-test="songListComponentItem">
+                <section className="item" key={song.title} data-test="songListComponentItem">
                     <div className="right floated content">
-                        <button 
-                            className="ui button primary"
+                        <Button 
+                            // className="ui button primary"
                             onClick={()=>props.selectSong(song)}
                         >
                             Select
-                        </button>
+                        </Button>
                     </div>
-                    <div className="content" >{song.title}</div>
-                </div>
+                    <Content className="content" >{song.title}</Content>
+                </section>
             ))}
       </div>
     );

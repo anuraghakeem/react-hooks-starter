@@ -1,21 +1,30 @@
 import React from '../../node_modules/react';
 import SongListComponent from './SongList';
 import SongDetailComponent from './SongDetail';
-import {Grid,Container,Segment} from 'semantic-ui-react';
+import {Grid} from 'semantic-ui-react';
+import styled from '@emotion/styled'
+
 
 
 const App= ()=> {
+
+const ContainerElement = styled.div`
+  color: white;
+  background : #A42CD6;
+  margin-top : 20px; 
+`
   return (
     <Grid container columns={2} stackable>
       <Grid.Column>
-        <Segment>
+        <ContainerElement>
           <SongListComponent />
-        </Segment>
+        </ContainerElement>
       </Grid.Column>
       <Grid.Column>
-        <Segment>
+        <ContainerElement>
+        {/* <Button>This is a hotpink button.</Button> */}
           <SongDetailComponent />
-        </Segment>
+        </ContainerElement>
       </Grid.Column>
       
     </Grid>
