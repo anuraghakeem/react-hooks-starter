@@ -1,14 +1,23 @@
 /* eslint-disable no-useless-constructor */
 import React from 'react';
 import propTypes from 'prop-types';
+import styled from 'styled-components';
 
 function Error(props) {
+
+    const ErrorMessage = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
     return (
-        <div className = "getError">
+        <div className="getError">
             <div className="ui warning message">
                 <i className="close icon"></i>
                 <div className="header">
-                    {props.message}
+                    <ErrorMessage>
+                        {props.message}
+                    </ErrorMessage >
                 </div>
             </div>
         </div>
@@ -17,7 +26,7 @@ function Error(props) {
 }
 
 Error.propTypes = {
-    message : propTypes.string
+    message: propTypes.string
 }
 
 export default Error;
