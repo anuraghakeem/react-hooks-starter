@@ -2,17 +2,16 @@ import React from '../../node_modules/react';
 import SongListComponent from './SongList';
 import SongDetailComponent from './SongDetail';
 import {Grid} from 'semantic-ui-react';
-import styled from '@emotion/styled'
-
-
+import {ContainerElement} from './styles'
 
 const App= ()=> {
 
-const ContainerElement = styled.div`
-  color: white;
-  background : #A42CD6;
-  margin-top : 20px; 
-`
+// ----- replaced with {ContainerElement}
+// const ContainerElement = styled.div`
+//   color: white;
+//   background : #A42CD6;
+//   margin-top : 20px; 
+// `
   return (
     <Grid container columns={2} stackable>
       <Grid.Column>

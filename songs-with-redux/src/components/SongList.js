@@ -2,16 +2,17 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { selectSong } from '../actions';
 import styled from '@emotion/styled';
+import {Button} from './styles'
 
 
-const Button = styled.button`
-color: white;
-background-color: black;
-border-width: 0;
-margin-top : 5px;
-margin-right : 10px;
-margin-bottom : 5px;
-`
+// const Button = styled.button`
+// color: white;
+// background-color: black;
+// border-width: 0;
+// margin-top : 5px;
+// margin-right : 10px;
+// margin-bottom : 5px;
+// `
 
 const Content = styled.div`
 padding : 10px;
