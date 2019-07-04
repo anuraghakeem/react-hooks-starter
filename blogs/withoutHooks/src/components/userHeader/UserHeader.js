@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import propTypes from 'prop-types';
 import { fetchUser } from '../../actions';
 
 export class UserHeader extends React.Component {
@@ -21,6 +22,12 @@ export class UserHeader extends React.Component {
             </div>
         )
     }
+}
+
+UserHeader.propTypes = {
+    userId: propTypes.number,
+    user: propTypes.object,
+    fetchUser : propTypes.func
 }
 
 const mapStateToProps = (state, ownProps) => {
