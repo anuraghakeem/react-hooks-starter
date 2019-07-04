@@ -1,6 +1,7 @@
 /* eslint-disable no-useless-constructor */
 import React from 'react';
 import { connect } from 'react-redux';
+import propTypes from 'prop-types';
 import { fetchPosts } from '../../actions';
 import UserHeader from '../userHeader/UserHeader';
 
@@ -20,8 +21,8 @@ export class PostList extends React.Component {
                     <i className="large middle aligned icon user" />
                     <div className="content">
                         <div className="description">
-                            <h2>{post.title}</h2>
-                            <p>{post.body}</p>
+                            <h2 className="getPostTitle">{post.title}</h2>
+                            <p className="getPostBody">{post.body}</p>
                         </div>
                         <br />
                         <UserHeader userId={post.userId} />
@@ -31,7 +32,6 @@ export class PostList extends React.Component {
         })
     }
     render() {
-        console.log(this.props.posts);
         return (
             <div className = "getPostList">
             <div className="ui relaxed divided list">
@@ -40,6 +40,11 @@ export class PostList extends React.Component {
             </div>
         )
     }
+}
+
+PostList.propTypes = {
+    posts: propTypes.array,
+    fetchPost: propTypes.func
 }
 
 const mapStateToProps = (state) => {
