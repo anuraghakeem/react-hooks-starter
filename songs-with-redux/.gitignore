@@ -5,8 +5,9 @@
 /.pnp
 .pnp.js
 
-# testing
-/coverage
+# testing 
+# Coverage included
+# /coverage
 
 # production
 /build

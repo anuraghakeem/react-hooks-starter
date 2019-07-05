@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux'
-const songsReducer = ()=>{
+export const songsReducer = ()=>{
     return [
         {title:'Avengers: Infinity War',rating:'8.5'},
         {title:'Spider-Man: Into the Spider-Verse',rating:'8.5'},
@@ -8,7 +8,8 @@ const songsReducer = ()=>{
     ]
 }
 
-const selectedSongReducer = (selectedSong=null,action) => {
+export const selectedSongReducer = (selectedSong=null,action) => {
+    console.log(action.payload)
     if ( action.type === 'SONG_SELECTED'){
         return action.payload
     }

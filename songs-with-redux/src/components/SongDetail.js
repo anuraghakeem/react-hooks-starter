@@ -19,7 +19,7 @@ text-align: center;
 `
 
 const SongDetailComponent= (props)=> {
-    // console.log(props)
+    console.log(props)
     if(props.selectedSong)    
         return (
             <Fragment>
