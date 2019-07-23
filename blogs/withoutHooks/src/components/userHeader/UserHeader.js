@@ -1,11 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import propTypes from 'prop-types';
-import { fetchUser } from '../../actions';
+import { getUser } from '../../actions';
 
 export class UserHeader extends React.Component {
+    constructor(props){
+        super(props)
+    }
+    
     componentDidMount() {
-        this.props.fetchUser(this.props.userId);
+        // console.log(this.props.userId)
+        this.props.getUser(this.props.userId);
     }
 
     render() {
@@ -27,7 +32,7 @@ export class UserHeader extends React.Component {
 UserHeader.propTypes = {
     userId: propTypes.number,
     user: propTypes.object,
-    fetchUser : propTypes.func
+    getUser : propTypes.func
 }
 
 const mapStateToProps = (state, ownProps) => {
@@ -36,5 +41,5 @@ const mapStateToProps = (state, ownProps) => {
 
 export default connect(
     mapStateToProps,
-    { fetchUser }
+    { getUser }
 )(UserHeader);
