@@ -2,7 +2,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import propTypes from 'prop-types';
-import { fetchPosts } from '../../actions';
+import { getPosts } from '../../actions';
 import UserHeader from '../userHeader/UserHeader';
 
 export class PostList extends React.Component {
@@ -11,7 +11,7 @@ export class PostList extends React.Component {
     }
     
     componentDidMount() {
-        this.props.fetchPosts();
+        this.props.getPosts();
     }
 
     renderList = () => {
@@ -44,7 +44,7 @@ export class PostList extends React.Component {
 
 PostList.propTypes = {
     posts: propTypes.array,
-    fetchPost: propTypes.func
+    getPosts: propTypes.func
 }
 
 const mapStateToProps = (state) => {
@@ -53,5 +53,5 @@ const mapStateToProps = (state) => {
 
 export default connect(
     mapStateToProps,
-    { fetchPosts }
+    { getPosts }
 )(PostList);
